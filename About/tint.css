@@ -1,0 +1,30 @@
+/* Tint */
+/* A stylesheet for quicky changing the tint color. */
+
+/* rgba(248, 66, 163, 100); /* Pink */
+
+a,
+h1 a,
+h2 a,
+h3 a,
+div#logo a:hover p,
+nav[role="navigation"] ul li a:hover,
+body#xabout li#about a,
+body#xportfolio li#portfolio a,
+body#xportfolio-i li#portfolio a,
+body#xweblogue li#weblogue a,
+body#xweblogue-i li#weblogue a,
+#prev a:hover,
+#next a:hover {
+	color: rgba(248, 66, 163, 100); /* Pink */
+}
+
+.tile-overlay {
+	background: rgba(248, 66, 163, 0.7); /* Pink */
+}
+
+@media only screen and (max-width: 768px) {
+	body#xabout li#about a, body#xportfolio li#portfolio a, body#xweblogue li#weblogue a {
+		color: rgba(248, 66, 163, 100); /* Pink */
+  	}	
+}

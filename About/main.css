@@ -1,0 +1,1231 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* HTML5 Reset */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+  /* General */
+
+  body {
+  color: #999;
+  font-family: Lora, Georgia, serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  /*color: rgba(248, 66, 163, 100); /* Pink */
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(102, 102, 102, 100); /* Dark gray */
+  text-decoration: underline;
+}
+
+a:visited {
+  outline: none;
+}
+
+.hidden {display: none; }
+
+.clear { clear: both; }
+
+
+
+/* Typography ******************************************* */
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(153, 153, 153, 100);
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4.8em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 3.6em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 3.0em;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 2.0em;
+  margin-bottom: 20px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  /*color: rgba(248, 66, 163, 100); */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  border-bottom: none;
+  color: rgba(68, 68, 68, 100);
+  text-decoration: none;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 { /* A little extra cushion for headlines, but only after <p>. */
+  padding-top: 30px;
+}
+
+p, code {
+  color: rgba(119, 119, 119, 100);
+  font-size: 17px;
+  letter-spacing: 0.02px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+footer p {
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+blockquote {
+  border-left: 3px solid #eee;
+  margin-left: 15px;
+  padding-left: 15px;
+  font-style: italic;
+}
+
+abbr,
+acronym {
+  cursor: help;
+  border-bottom: 1px dashed #ccc;
+}
+
+span.amp {
+  font-family: Palatino, Lora, serif;
+  font-style: italic;
+}
+
+figcaption {
+  text-align: left;
+  font-size: 14px;
+  font-style: italic;
+  margin: -50px 0 0 0;
+  padding: 20px 0;
+}
+
+
+
+/* Logo */
+
+div#logo svg {
+  height: 48px;
+  width: 48px;
+}
+
+div#logo:hover path {
+  fill: rgba(102, 102, 102, 100); /* Dark gray */
+}
+
+div#logo p {
+  color: rgba(102, 102, 102, 100); /* Dark gray */
+  float: left;
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.2em;
+  line-height: 1em;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+div#logo p span {
+  color: rgba(153, 153, 153, 100); /* Light gray */
+  font-family: Lora, Georgia, serif;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+div#logo a:hover p {
+  /*color: rgba(248, 66, 163, 100); /* Pink */
+}
+
+div#logo a:hover p span {
+  color: rgba(68, 68, 68, 100);
+}
+
+@media only screen and (max-width: 320px) { /* Hide logo text at really narrow screen widths */
+  div#logo p, div#logo p span {
+    display: none;
+  }
+}
+
+/* Navigation */
+
+nav[role="navigation"] ul li a {
+  color: rgba(102, 102, 102, 100); /* Dark gray */
+  display: inline-block;
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.2em;
+  line-height: 1em;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  @media only screen and (max-width: 768px) {
+    nav[role="navigation"] ul li a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+nav[role="navigation"] ul li a span {
+  color: rgba(153, 153, 153, 100); /* Light gray */
+  font-family: Lora, Georgia, serif;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+nav[role="navigation"] ul li a:hover {
+  /*color: rgba(248, 66, 163, 100); /* Pink */
+  text-decoration: none;
+}
+
+
+nav[role="navigation"] ul li a:hover span {
+  color: rgba(68, 68, 68, 100);
+  font-family: Lora, Georgia, serif;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+nav[role="navigation"] ul li.active a {
+  color: #444; }
+
+body#xabout li#about a, body#xportfolio li#portfolio a, body#xportfolio-i li#portfolio a, body#xweblogue li#weblogue a, body#xweblogue-i li#weblogue a { /* You are here */
+  /*color: rgba(248, 66, 163, 100);*/
+}
+  @media only screen and (max-width: 768px) {
+    body#xabout li#about a, body#xportfolio li#portfolio a, body#xweblogue li#weblogue a {
+      /*color: rgba(248, 66, 163, 100);*/
+    }
+  }
+
+
+
+/* Lists ******************************************* */
+
+div.burrito ul {
+  list-style-type: disc;
+}
+
+div.burrito li {
+  color: rgba(119, 119, 119, 100);
+  font-size: 1.7em;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+div.burrito ol {
+  list-style-type: decimal;
+}
+
+ul + h1,  ul + h2, ul + h3 { /* A little extra cushion for headlines, but only after <li>. */
+  padding-top: 30px;
+}
+
+
+/* Media ******************************************* */
+
+
+
+div.burrito img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 40px;
+  text-align: left;
+}
+body#xhome div.burrito img,
+body#xportfolio div.burrito img {
+  padding-bottom: 0;
+}
+
+p + img, p + object, p + embed {
+  padding-top: 40px;
+}
+
+/*div.burrito img,*/ div.burrito p.video {
+  display: block;
+  margin-bottom: 50px;
+  text-align: left;
+  width: 100%;
+}
+
+object, embed {
+  max-width: 100%;
+}
+
+
+
+/* Misc ******************************************* */
+
+
+
+.hide {
+  display: none; }
+
+a img {
+  border: none; }
+
+/* self-clear floats */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+
+
+/* Structure ******************************************* */
+
+
+
+html, body { height: 100%; }
+
+body {
+  background: url(../img/bg-header.jpg) 0 -500px repeat-x;
+}
+  @media only screen and (max-width: 768px) {
+    body {
+      background: url(../img/bg-header.jpg) 0 -575px repeat-x;
+    }
+  }
+
+hr { 
+    background-color: rgba(153, 153, 153, 100); /* Light gray */
+    border-style: none;
+    display: block;
+    height: 1px;
+    margin: 50px auto 0 auto;
+}
+
+div.tortilla { /* Mmmmmm yeah! Let's create an area for our header stuffs. */
+  border-bottom: none;
+  margin-bottom: 50px;
+  min-height: 110px;
+  padding: 50px 0;
+}
+  @media only screen and (max-width: 768px) {
+    div.tortilla {
+      padding: 0;
+    }
+  }
+
+header[role="banner"] { /* Let's wrap our logo, navigation, and any header messaging in this bad boy. */
+  margin: 0 auto;
+  max-width: 1100px; /* This is like a nice belt. It'll constrain this area's width. */
+  z-index: 2; }
+
+div#logo {
+  float: left;
+  margin: 20px 0 0 20px; /* Nudging into position. */
+  text-align: left;
+  width: 290px;
+}
+
+div#logo img, div#logo svg { /* Logo mark. */
+  float: left;
+  margin-right: 20px; /* Pushes text away from rigth edge. */
+}
+
+div#logo path {
+  fill: rgba(248, 66, 163, 100); /* Pink */
+}
+
+a.menu {
+  display: none; /* Hides the hamburger menu icon at wider breakpoints. */
+}
+  @media only screen and (max-width: 768px) { /* Unhides & positions the hamburger menu icon on smaller screens. */
+    a.menu {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+  }
+
+nav[role="navigation"] {
+  float: right;
+}
+  @media only screen and (max-width: 768px) { /* Sets the position of the open mobile menu */
+    nav[role="navigation"] {
+      border-bottom: 2px solid rgba(238, 238, 238, 100); 
+      display: none; /* Hides the mobile menu by default */
+      clear: left;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+nav[role="navigation"] ul {
+  margin: 18px 0 0; /* Nudges the navigation down to line up with the logo text. */
+}
+  @media only screen and (max-width: 768px) {
+    nav[role="navigation"] ul {
+      padding: 0;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      background: rgba(255, 255, 255, 100) }
+  }
+
+nav[role="navigation"] ul li {
+  display: inline;
+  margin: 10px;
+}
+  @media only screen and (max-width: 768px) {
+    nav[role="navigation"] ul li {
+      display: block;
+      font-size: 1.5em;
+      margin: 0;
+      border-bottom: 1px solid rgba(238, 238, 238, 100); 
+    }
+  }
+
+div.burrito {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1100px;
+}
+
+div.col1 {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  max-width: 768px;
+  width: 100%;
+}
+
+div.col2 {
+  float: right;
+  width: 275px;
+}
+  @media only screen and (max-width: 1102px) {
+    div.col2 {
+      float: left;
+      margin-top: 30px;
+    }
+  }
+
+footer {
+  background: rgba(244, 244, 244, 100);/*url(../img/skippy.gif) 99% 85% no-repeat*/
+  /*background-size: 67px 80px;*/
+  margin-top: 50px;
+  padding: 50px 20px;
+  position: relative;
+  bottom: 0;
+}
+
+.rolo {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Home-specific styling ******************************************* */
+
+
+/* Structure */
+
+body#xhome {
+  background: url(../img/bg-header.jpg) 0 -150px repeat-x;
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome {
+      background: url(../img/bg-header.jpg) 0 -350px repeat-x;
+    }
+  }
+
+
+body#xhome div.tortilla { /* Mmmmmm yeah! Let's create an area for our header stuffs. */
+  border-bottom: none;
+  margin-bottom: 50px;
+  min-height: 500px;
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome div.tortilla {
+      margin-bottom: 0px; /* Drop space below torilla. */
+      min-height: 400px;
+    }
+  }
+
+body#xhome div.tortilla div.hdrmsg {
+  clear: both;
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome div.tortilla div.hdrmsg {
+      padding-top: 20px;
+    }
+  }
+
+body#xhome div.tortilla div.hdrmsg img {
+  display: inline-block;
+  max-height: 300px;
+  padding: 100px;
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome div.tortilla div.hdrmsg img {
+      max-height: 200px;
+      padding: 20px;
+    }
+  }
+
+.eggroll {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body#xhome div.burrito p {
+  color: rgba(175, 175, 175, 100);
+  display: block;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0px 0px 0px 0px;
+  /*max-width: 1100px;*/
+  text-align: center; 
+}
+
+/* Typography */
+
+body#xhome div.burrito h2 {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center; 
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome div.burrito h2 {
+      margin: 30px;
+    }
+  }
+
+body#xhome div.tortilla p.hdrmsg {
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: 8px;
+  line-height: 50px;
+  padding-top: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+  @media only screen and (max-width: 768px) {
+    body#xhome div.tortilla p.hdrmsg {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    body#xhome div.tortilla p.hdrmsg {
+      font-size: 24px;
+      padding-top: 20px;
+    }
+  }
+
+body#xhome div.tortilla p.hdrmsg a:hover {
+  text-decoration: none;
+}
+
+body#xhome div.tortilla p.hdrmsg a:hover:after {
+  content: '';
+}
+
+
+
+/* About-specific styling ******************************************* */
+
+
+
+/* Structure */
+
+body#xabout div.springroll {
+  display: block;
+  float: right;
+  max-width: 280px;
+  margin-left: 60px;
+}
+  @media only screen and (max-width: 768px) {
+    body#xabout div.springroll {
+      border-left: none;
+      float: none;
+      margin-left: 0;
+      margin: 0 auto 50px auto;
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
+body#xabout figcaption {
+  text-align: left;
+  font-size: 14px;
+  font-style: italic;
+  margin: -50px 0 50px 0;
+  padding: 20px 0;
+}
+
+/* Media */
+
+body#xabout div.springroll img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  max-width: 280px;
+  padding-bottom: 0;
+}
+  @media only screen and (max-width: 768px) {
+    body#xabout div.springroll img {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+/* Typography */
+
+body#xabout div.burrito h1,
+body#xabout div.burrito h2,
+body#xabout div.burrito h3,
+body#xabout div.burrito p {
+  max-width: 800px;
+}
+
+body#xabout div.burrito p.featuretext {
+  font-size: 30px;
+  line-height: 56px;
+  max-width: 1100px;
+}
+  @media only screen and (max-width: 768px) { /* Settle down, Hoss. Return feature text to normal size on smaller screens. */
+    body#xabout div.burrito p.featuretext {
+      clear: both;
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+
+.dropcap {
+  font-size: 4em;
+  float: left;
+  display: block;
+  position: relative;
+  top: 30px;
+  padding: 0 5px 10px 0;
+}
+  @media only screen and (max-width: 768px) {
+    .dropcap {
+      top: 20px; /* Small nudge down for smaller dropcap. */
+      padding: 0 5px 10px 0;
+    }
+  }
+
+body#xabout div.springroll ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+  @media only screen and (max-width: 768px) {
+    body#xabout div.springroll ul {
+      padding-bottom: 30px;
+    }
+  }
+
+body#xabout div.springroll li {
+  height: 24px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 64px;
+}
+  @media only screen and (max-width: 768px) {
+    body#xabout div.springroll li {
+      display: inline-block;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    body#xabout div.springroll li {
+      padding: 10px;
+    }
+  }
+
+body#xabout div.springroll li a {
+  display: block;
+  padding: 20px;
+}
+
+body#xabout div.springroll li a:hover {
+  background-color: rgba(244, 244, 244, 100); /* Light gray */
+}
+
+body#xabout div.springroll li img {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  margin: 0 auto;
+  opacity: 0.25;
+  width: 24px;
+}
+
+body#xabout div.springroll li a:hover img {
+  opacity: 1;
+}
+
+.springroll p {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+/* Porfolio-specific styling ******************************************* */
+
+
+/* Structure */
+
+p + div.taquito {
+  padding-top: 30px;
+}
+
+.taquito img {
+  display: block;
+  float: left;
+  padding-right: 20px;
+  width: 28%;
+}
+  @media only screen and (max-width: 768px) {
+    .taquito img {
+      float: none;
+      width: 100em;
+      padding-right: 0;
+}
+  }
+
+div#notes {
+  border-bottom: 1px solid rgba(221, 221, 221, 100); /* Lightest gray */
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+/* Typography */
+
+body#xportfolio-i h1 {
+  padding-bottom: 0;
+}
+
+body#xportfolio div.burrito p {
+  color: rgba(175, 175, 175, 100);
+  display: block;
+  font-size: 1.6em;
+  font-style: italic;
+  margin: 0 0 30px 0;
+  text-align: center; 
+}
+
+div.burrito div#prevnext ul {
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+}
+  @media only screen and (max-width: 768px) {
+    #prev, #next {
+      display: none; /* Hide on small screens. Doesn't feel great, but it'll have to do for now. */
+    }
+  }
+
+#prev {
+  float: left;
+  margin-left: 0;
+  text-align: left;
+  }
+  
+#next {
+  float: right;
+  text-align: right;
+  }
+
+#prev a, #next a {
+  color: rgba(221, 221, 221, 100); /* Lightest gray */
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+#prev a:hover, #next a:hover {
+  /*color: rgba(248, 66, 163, 100); Pink */
+}
+
+body#xportfolio-i h1 {
+  clear: both;
+  padding-top: 13px;
+}
+  @media only screen and (max-width: 768px) {
+    body#xportfolio-i h1 {
+      padding-top: 0;
+    }
+  }
+
+body#xportfolio-i h1, body#xportfolio-i h2, body#xportfolio-i h3, body#xportfolio-i p {
+  max-width: 800px;
+}
+
+div#notes p {
+  font-style: italic;
+}
+
+p.extfolio a {
+  background-color: #f4f4f4;
+  display: block;
+  padding: 50px;
+}
+
+/* Portfolio filtering */
+
+#portfolio-filter {
+  list-style-type: none;
+  margin: 50px 0;
+  }
+  
+#portfolio-filter li {
+  display: inline;
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  }
+  
+#portfolio-filter li a {
+  color: #ccc;
+  margin: 0 10px;
+  padding: 10px;
+  }
+    @media only screen and (max-width: 768px) {
+      #portfolio-filter li a {
+        margin: 0;
+      }
+    }
+  
+#portfolio-filter li a:hover {
+  background: #f4f4f4;
+  color: #f842a3;
+  text-decoration: none;
+  }
+  
+#portfolio-filter li a.current {
+  color: #999;
+  background: #eaeaea;
+  text-decoration: none;
+  }
+
+
+/* Responsive portfolio tile grid. Thanks, projekt202.com! ******************************************* */
+
+
+
+.grid-25, .mobile-grid-50 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0 10px 20px 10px;
+}
+
+.grid-25 {
+  display: inline;
+  float: left;
+  width: 25%;
+  margin: 0;
+    margin-bottom: 0;
+}
+
+.mobile-grid-50 {
+  float: left;
+  width: 50%;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-25 {
+    float: left;
+    width: 25%;
+  }
+  .grid-100 {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+}
+
+.tile-wrapper {
+  font-family: 'NTR', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none
+}
+
+@media screen and (min-width: 768px) {
+    .tile-wrapper {
+        font-size: 24px
+    }
+}
+
+.tile {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+  overflow: hidden
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms
+}
+
+a:hover .tile img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
+}
+
+.tile-overlay {
+  background: rgba(210, 94, 36, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -moz-transition: opacity 300ms ease-out;
+  -o-transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out
+}
+
+a:hover .tile-overlay {
+  opacity: 1
+}
+
+.tile-overlay-text, .tile-name {
+  display: block;
+  color: white
+}
+
+.tile-overlay-text {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  top: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transform: scale(1.2) translate(0, -50%);
+  -ms-transform: scale(1.2) translate(0, -50%);
+  -webkit-transform: scale(1.2) translate(0, -50%);
+  transform: scale(1.2) translate(0, -50%);
+  -moz-transition: -moz-transform 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: -o-transform 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 300ms cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+a:hover .tile-overlay-text {
+  -moz-transform: scale(1) translate(0, -50%);
+  -ms-transform: scale(1) translate(0, -50%);
+  -webkit-transform: scale(1) translate(0, -50%);
+  transform: scale(1) translate(0, -50%)
+}
+
+.tile-name {
+  margin-bottom: 5px;
+    ine-height: 1.1em
+}
+
+
+/* Weblogue-specific styling ******************************************* */
+
+
+
+/* Typography */
+
+p.metadate {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+p.metadate + h1 { /* Kill a little extra cushion for headlines for this class. */
+  padding-top: 0px;
+}
+
+body#xweblogue div.col1 {
+  max-width: 800px;
+}
+
+.post {
+  padding-bottom: 100px;
+}
+
+
+
+/* Comment form. Thanks to Ms. Ashley Bischoff for cluing me into using a definition list for the form. Nifty. */
+
+#txpCommentInputForm { border: none; margin: 0; padding: 0; }
+
+#txpCommentInputForm dt, #txpCommentInputForm dd { clear: both; margin: 0; padding: 0; }
+#txpCommentInputForm dl label, #txpCommentInputForm dl input { clear: both; }
+#txpCommentInputForm dl label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; }
+#txpCommentInputForm dl input { background: #eaeaea; margin: 0 0 10px 0; padding: 2px; width: 50%; }
+
+#txpCommentInputForm textarea {
+  background: #eaeaea;
+  font: 11px Verdana, "Lucida Grande", Calibri, Arial, sans-serif;
+  height: 200px;
+  line-height: 18px;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  width: 100%; }
+
+#personalinfo input { float: left; margin: 7px 5px 0 0; }
+#personalinfo label { float: left; }
+
+#preview { margin: 0 5px 20px 0; }
+#commentbuttons { clear: both; padding: 10px 0 30px 0; }
+.button { float: left; margin-right: 5px; }
+  
+/* Comments. */
+
+.odd {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  text-align: left;
+  }
+
+.even {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  text-align: left;
+  background: #f5f5f5;
+  }
+  
+.photoid {
+  margin-bottom: 5px;
+}
+
+.photoid img { /* Gravatar styling */
+  border: 4px solid #ccc; 
+  float: right;
+  margin: 0 0 20px 10px; 
+  max-width: 40px; 
+  padding-bottom: 0px; 
+}
+
+.commentsub {
+  background: url(../img/dash-brown.gif) repeat-x left bottom;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  }
+
+.commentsub img { border: 0; margin: 0; padding: 0; }
+
+.owner { background: #ffd1ea; margin: 0 0 10px 0; padding: 10px; } /* Author Comment style */
+.owner a { color: #f842a3; }
+.owner a:hover { color: #000 }
+.owner p, .owner li { color: #666; }
+.owner .photoid img {  border: 0; background: #fff; }
+
+#cpreview .owner,
+#cpreview .odd,
+#cpreview .even { background: #ffe5f8; border: 3px solid #272c28; margin: 0 0 10px 0; padding: 10px; }
+
+#cpreview .owner p,
+#cpreview .odd p,
+#cpreview .even p { color: #555;}
+
+#cpreview .owner p a,
+#cpreview .odd p a,
+#cpreview .even p a { border-bottom: 1px dotted; color: #d63597; padding: 1px; text-decoration: none; }
+
+#cpreview .owner p a:hover,
+#cpreview .odd p a:hover,
+#cpreview .even p a:hover { background: #272c28; color: #fff; }
+
+#cpreview #cpreview-notice { background: #272c28; color: #fff; margin: 0; padding: 5px; font-weight: bold; }
+
+div.enchilada div.burrito div.col1 div div.even div.photoid img,
+div.enchilada div.burrito div.col1 div div.odd div.photoid img,
+div.enchilada div.burrito div.col1 div div.owner div.photoid img {
+  padding-bottom: 0;
+}
+
+
+
+/* Archive-specific styling ******************************************* */
+
+
+
+dl.archive.dt, dl.archive dd {
+  color: rgba(119, 119, 119, 100);
+  font-family: Lora, Georgia, serif;
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+  margin: 0 0 10px 0;
+}
+
+dl.archive {
+  margin: 0 0 0 12px;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  }
+
+dl.archive dt {
+  font-size: 3.0em;
+  padding: 5px 0 10px 0;
+  }
+  
+dl.archive dd {
+  margin: 0 0 5px 0;
+  padding: 0 0 0 20px;
+  }
+
+
+
+  /* Search-specific styling ******************************************* */
+
+
+
+#searchme {
+  margin: 0 0 50px 0;
+  padding: 0;
+  text-align: left;
+}
+
+#searchme .searchfield {
+}
+
+
+#searchme .searchbutton {
+}
+
+
+/* IE patches ?
+--------------------------------------------- */
+/* self-clear floats */
+* html .group {
+  /* IE6 */
+  height: 1%; }
+
+*:first-child + html .group {
+  /* IE7 */
+  min-height: 1px; }
+
+
+
+
+
+
+
+
+
+
+
+
