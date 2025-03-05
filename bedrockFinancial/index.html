@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Bedrock Financial</title>
+    <link rel="stylesheet" href="bedrockFinancial/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Bedrock Financial</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#lead-form" class="cta-btn">Get a Free Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Secure Your Financial Future with Confidence</h1>
+            <p>Expert financial planning & investment strategies tailored for you.</p>
+            <a href="#lead-form" class="cta-btn">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Investment Planning</h3>
+            <p>Maximize your wealth with smart investments.</p>
+        </div>
+        <div class="service-box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Wealth Protection</h3>
+            <p>Secure your assets for future generations.</p>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form -->
+    <section id="lead-form">
+        <h2>Get a Free Financial Consultation</h2>
+        <form action="#" method="POST">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHr00000JRAps" method="POST">
+    
+                <input type=hidden name="oid" value="00DHr00000JRAps">
+                <input type=hidden name="retURL" value="file:///Users/amjadkhan/Desktop/untitled%20folder/Home.html">
+                <input  id="first_name" maxlength="40" name="first_name" placeholder="Your First Name" size="20" type="text" /><br>
+                
+                <input  id="last_name" maxlength="80" name="last_name" placeholder="Your Last Name" size="20" type="text" /><br>
+                
+                <input  id="email" maxlength="80" name="email" placeholder="Your Email" size="20" type="text" /><br>
+                
+                <input  id="company" maxlength="40" name="company" placeholder="Your Company" size="20" type="text" /><br>
+                
+                <input  id="city" maxlength="40" name="city" placeholder="Your City" size="20" type="text" /><br>
+                
+                <input  id="state" maxlength="20" name="state" placeholder="Your State/Province" size="20" type="text" /><br>
+                
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bedrock Financial. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
