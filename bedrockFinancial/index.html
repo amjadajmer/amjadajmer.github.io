@@ -19,6 +19,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#case-form">Create Support Case</a></li>
             </ul>
             <a href="#lead-form" class="cta-btn">Get a Free Consultation</a>
         </nav>
@@ -69,6 +70,24 @@
             <input  id="city" maxlength="40" name="city" placeholder="Your City" size="20" type="text" /><br>
             <input  id="state" maxlength="20" name="state" placeholder="Your State/Province" size="20" type="text" /><br>
             <input  id="country" maxlength="20" name="country" placeholder="Your Country" size="20" type="text" /><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Lead Capture Form -->
+    <section id="case-form">
+        <h2>Create Support Case</h2>
+        
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHr00000JRAps" method="POST">
+            <input type=hidden name="orgid" value="00DHr00000JRAps">
+            <input type=hidden name="retURL" value="http://">
+            <input  id="name" maxlength="80" name="name" placeholder="Contact Name" size="20" type="text" /><br>
+            <input  id="email" maxlength="80" name="email" placeholder="Email" size="20" type="text" /><br>
+            <input  id="phone" maxlength="40" name="phone" placeholder="Phone" size="20" type="text" /><br>
+            <input  id="subject" maxlength="80" name="subject" placeholder="Subject" size="20" type="text" /><br>
+            <textarea name="description" placeholder="Description"></textarea><br>
+            <input  id="company" maxlength="80" name="company" placeholder="Company" size="20" type="text" /><br>
+
             <button type="submit">Submit</button>
         </form>
     </section>
