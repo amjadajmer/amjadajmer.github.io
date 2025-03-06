@@ -97,6 +97,34 @@ nav {
     cursor: pointer;
 }
 
+/* Lead Form */
+#case-form {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #93854a;
+}
+
+#case-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#case-form input,#case-form select, #case-form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+#case-form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     text-align: center;
