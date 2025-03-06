@@ -80,13 +80,14 @@
         
         <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHr00000JRAps" method="POST">
             <input type=hidden name="orgid" value="00DHr00000JRAps">
-            <input type=hidden name="retURL" value="http://">
-            <input  id="name" maxlength="80" name="name" placeholder="Contact Name" size="20" type="text" /><br>
-            <input  id="email" maxlength="80" name="email" placeholder="Email" size="20" type="text" /><br>
+            <input type=hidden name="retURL" value="https://amjadajmer.github.io/bedrockFinancial/index.html">
+            
+            <input  id="name" maxlength="80" name="name" placeholder="Contact Name" size="20" type="text" required/><br>
+            <input  id="email" maxlength="80" name="email" placeholder="Email" size="20" type="text" required/><br>
             <input  id="phone" maxlength="40" name="phone" placeholder="Phone" size="20" type="text" /><br>
-            <input  id="subject" maxlength="80" name="subject" placeholder="Subject" size="20" type="text" /><br>
-            <textarea name="description" placeholder="Description"></textarea><br>
-            <input  id="company" maxlength="80" name="company" placeholder="Company" size="20" type="text" /><br>
+            <input  id="subject" maxlength="80" name="subject" placeholder="Subject" size="20" type="text" required /><br>
+            <textarea name="description" placeholder="Description" required></textarea><br>
+            <input  id="company" maxlength="80" name="company" placeholder="Company" size="20" type="text" required/><br>
 
             <button type="submit">Submit</button>
         </form>
